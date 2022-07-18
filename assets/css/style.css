@@ -20100,7 +20100,7 @@ blockquote .inner-content .user-name:before {
   width: 100%;
 }
 .item-linked{
-  width: calc((100% - 20px) / 3);
+  width: calc((100% - 55px) / 3);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20202,6 +20202,7 @@ blockquote .inner-content .user-name:before {
   position: relative;
 }
 .box-outstanding-features {
+  margin-top:11px;
   width: 100%;
   margin-bottom: 1rem;
   background: #F2F2F2;
@@ -20237,6 +20238,7 @@ blockquote .inner-content .user-name:before {
   margin-bottom: 5px;
 }
 .blog-content{
+  border-radius: 10px;
   width: 100%;
   overflow: hidden;
   float:unset;
