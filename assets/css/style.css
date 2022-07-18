@@ -16454,7 +16454,7 @@ blockquote .inner-content .user-name:before {
 }
 
 .header-searchbox .select-search-category {
-  border-radius: 5px 0 0 5px;
+  border-radius: 10px;
   margin-right: 5px;
   max-width: 200px;
   height: 50px;
@@ -17691,7 +17691,7 @@ blockquote .inner-content .user-name:before {
 }
 
 .widget-title:before {
-  background-color: #bac34e;
+  background-color: #3b6cff;
   height: 2px;
   width: 40px;
   content: "";
@@ -17968,7 +17968,8 @@ blockquote .inner-content .user-name:before {
 }
 
 .product-add-action ul li:hover a {
-  background-color: #bac34e;
+  border-radius: 10px;
+  background-color: #3b6cff;
 }
 
 .product-add-action ul li:hover a i {
