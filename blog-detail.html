@@ -28,6 +28,49 @@
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        #footer-sp{
+            display: none;
+        }
+        img{
+            border-radius: 5px;
+        }
+        @media (max-width:700px){
+            #header-ares{
+                max-width: 100% !important;
+                padding: 15px;
+            }
+            #row-block{
+                display: block !important ;
+                max-width: 100% !important;
+            }
+            .row{
+                padding-left: 10px !important;
+            }
+            #news-pc{
+                display: none;
+            }
+            .short-desc{
+                max-width: 100% !important;
+            }
+            #footer-pc{
+                display: none !important;
+            }
+            #footer-sp{
+                display: block !important;
+            }
+            .py-3{
+                margin-top: 10px;
+            }
+            .footer-area{
+                width: 105%;
+                padding-right: 30px;
+            }
+            .row{
+                padding-right: 10px;
+            }
+        }
+    </style>
 
 </head>
 
@@ -38,7 +81,7 @@
         <!-- Begin Main Header Area -->
         <header class="main-header_area position-relative">
             <div class="header-middle py-5">
-                <div class="container">
+                <div id="header-ares" class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-12">
                             <div class="header-middle-wrap">
@@ -98,7 +141,7 @@
                     </div>
                 </div>
             </div>
-            <div class="main-header header-sticky" data-bg-color="rgb(59 108 255)">
+            <div class="container main-header header-sticky" data-bg-color="rgb(59 108 255)" style="border-radius:5px ;">
                 <div class="container">
                     <div class="main-header_nav position-relative">
                         <div class="row align-items-center">
@@ -651,7 +694,7 @@
 
         <!-- Begin Main Content Area -->
         <main class="main-content">
-            <div class="container">
+            <div id="row-block"  class="container">
                 <div class="row">
                 <div class="breadcrumb-inner">
                     <ul class="list-inline list-unstyled">
@@ -660,13 +703,12 @@
                         <li class="active">Intel Arc A750 sẽ cạnh tranh với GeForce RTX 3060</li>
                     </ul>
                 </div>
-                <h4 class="title">Intel Arc A750 sẽ cạnh tranh với GeForce RTX 3060</h4>
             </div>
             </div>
-            <div class="blog-area section-space-y-axis-100">
-                <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-6 container">
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-lg-9">
                             <div class="blog-detail-item">
                                 <div class="blog-img">
                                     <img class="img-full" src="https://news.tandoanh.vn/wp-content/uploads/2022/07/ARC-A750-1024x576.jpg" alt="Blog Image">
@@ -685,7 +727,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <h5 class="title mb-4">
+                                    <h5 class="title mb-4" style="font-weight:700 ;">
                                         <a href="blog-detail-left-sidebar.html">Intel Arc A750 sẽ cạnh tranh với GeForce RTX 3060</a>
                                     </h5>
                                     <p class="short-desc mb-4 mb-7">Ryan Shrout (bộ phận Tiếp thị đồ họa Intel) đã nói về GPU rời Intel Arc A750, là GPU cho máy tính để bàn, nó sẽ có hiệu năng cao và chính thức ra mắt vào cuối mùa hè này.
@@ -706,6 +748,8 @@
                                         </div>
                                         <div class="single-img">
                                             <img class="img-full" src="https://news.tandoanh.vn/wp-content/uploads/2022/07/ARC-A750-1024x576.jpg" alt="Blog Banner">
+                                            <div style="height:10px ;"></div>
+                                            <img class="img-full" src="https://news.tandoanh.vn/wp-content/uploads/2022/07/ARC-A750-1024x576.jpg" alt="Blog Banner">                                        
                                         </div>
                                     </div>
                                     <p class="short-desc mb-4 mb-10">Hiện tại, chúng ta vẫn chưa thấy bất kỳ thiết kế thực tế nào của A750, Intel cũng chưa xác nhận ngày ra mắt hoặc giá cả cho GPU A750, nhưng như bên trên đã nói, họ sẽ chính thức  ra mắt các phiên bản ‘hiệu suất cao’ này vào cuối mùa hè năm nay.</p>
@@ -812,8 +856,32 @@
                                 </div>
                             </div>
                         </div>
+                        <div id="news-pc" class="col-lg-3 col-md-6 container">
+                            <div>
+                                <div style="background-image:url('https://news.tandoanh.vn/wp-content/uploads/2022/07/ARC-A750-HERO-300x165.jpg') ;width:160px;height: 90px;   background-size: contain;background-repeat: no-repeat;border-radius:5px ;"></div>
+                                <h6 style="color:red">Intel Arc A750 sẽ cạnh tranh với GeForce RTX 3060</h6>
+                                <p style="font-size: 9px;font-weight: 400;">Ngày 23/7/2022</p>
+                            </div>
+                            <div>
+                                <div style="background-image:url('https://news.tandoanh.vn/wp-content/uploads/2022/07/ARC-A750-HERO-300x165.jpg') ;width:160px;height: 90px;   background-size: contain;background-repeat: no-repeat;border-radius:5px ;"></div>
+                                <h6 style="color:red">Intel Arc A750 sẽ cạnh tranh với GeForce RTX 3060</h6>
+                                <p style="font-size: 9px;font-weight: 400;">Ngày 23/7/2022</p>
+                            </div>
+                            <div>
+                                <div style="background-image:url('https://news.tandoanh.vn/wp-content/uploads/2022/07/ARC-A750-HERO-300x165.jpg') ;width:160px;height: 90px;   background-size: contain;background-repeat: no-repeat;border-radius:5px ;"></div>
+                                <h6 style="color:red">Intel Arc A750 sẽ cạnh tranh với GeForce RTX 3060</h6>
+                                <p style="font-size: 9px;font-weight: 400;">Ngày 23/7/2022</p>
+                            </div>
+                            <div>
+                                <div style="background-image:url('https://news.tandoanh.vn/wp-content/uploads/2022/07/ARC-A750-HERO-300x165.jpg') ;width:160px;height: 90px;   background-size: contain;background-repeat: no-repeat;border-radius:5px ;"></div>
+                                <h6 style="color:red">Intel Arc A750 sẽ cạnh tranh với GeForce RTX 3060</h6>
+                                <p style="font-size: 9px;font-weight: 400;">Ngày 23/7/2022</p>
+                            </div>
+                        </div>
                     </div>
+                   
                 </div>
+                
             </div>
         </main>
         <!-- Main Content Area End Here -->
@@ -822,7 +890,7 @@
        <div class="footer-area" style="border-top: 1px solid #b9b6b6; padding-top: 45px;">
         <div class="footer-top section-space-y-axis-100 text-black" data-bg-color="rgb(247 250 250);" style="padding: 0;">
             <div class="container">
-                <div class="row">
+                <div id="footer-pc" class="row">
                     <div class="col-lg-3 col-md-6" style="width:29%">
                         <div class="widget-item">
                             <div class="footer-logo pb-4">
@@ -875,32 +943,75 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- <div class="col-lg-2 offset-lg-1 col-md-6 pt-10 pt-lg-0">
+                    <div class="col-lg-3 col-md-6 pt-10 pt-lg-0">
                         <div class="widget-item">
-                            <h3 class="widget-title mb-5"></h3>
+                            <h3 class="widget-title mb-5">Nhận thông tin</h3>
+                            <p class="short-desc">Nhập mail để nhận thông tin.</p>
+                        </div>
+                        <div class="widget-form-area">
+                            <form class="widget-form" action="#">
+                                <input style="background-color:#eee;border-radius:10px" class="input-field" type="email" autocomplete="off" placeholder="Email">
+                                <div class="button-wrap pt-5">
+                                    <button style="background-color: #3b6cff;border: 1px solid #fff;border-radius: 10px!important;" class="btn btn-custom-size btn-primary btn-secondary-hover rounded-0" id="mc-submit">Send Mail</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-sp">
+                    <div style="width:100%">
+                        <div class="widget-item">
+                            <div class="footer-logo pb-4">
+                                <a href="index.html">
+                                    <img src="https://laptopdienthoai.vn/wp-content/uploads/2021/06/FULL-NEW.png" alt="Logo">
+                                </a>
+                            </div>
+                            <p class="short-desc mb-2">Mang lại cho khách hàng giải pháp giá trị tối ưu trong lĩnh vực điện tử_Bao gồm việc trao đổi,mua bán, sửa chữa,hỗ trợ định giá, và đạo tạo phát triển nghề kinh doanh mảng điện thoại và laptop. </p>
+                            <div class="widget-contact-info pb-6">
+                                <ul>
+                                    <li>
+                                        <i class="pe-7s-map-marker"></i>
+                                        29/15/12 Nguyễn Văn Khối, P.11 , Gò Vấp
+                                    </li>
+                                    <li>
+                                        <i class="pe-7s-mail"></i>
+                                        <a href="mailto://info@example.com">laptopdienthoai@gmail.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="payment-method" style="margin-bottom:40px;margin-top: 0px;">
+                                <a href="javascript:void(0)">
+                                    <img src="https://vietjetonline.com/userupload/hinhanh/creditcards.png" alt="Payment Method">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 offset-lg-1 col-md-6 pt-10 pt-lg-0">
+                        <div class="widget-item">
+                            <h3 class="widget-title mb-5">Information</h3>
                             <ul class="widget-list-item">
-                                <li>
-                                    <a href="javascript:void(0)"></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">Validation</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">Wishlist</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">Terms of Use</a>
-                                </li>
                                 <li>
                                     <a href="javascript:void(0)">FAQ</a>
                                 </li>
+                                <li>
+                                    <a href="javascript:void(0)">Shipping</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Returns</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Order Status</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Gift Card Balance</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Accessibility</a>
+                                </li>
                             </ul>
                         </div>
-                    </div> -->
-                    <div class="col-lg-3 col-md-6 pt-10 pt-lg-0">
+                    </div>
+                    <div class="col-lg-12 col-md-6 pt-10 pt-lg-0">
                         <div class="widget-item">
                             <h3 class="widget-title mb-5">Nhận thông tin</h3>
                             <p class="short-desc">Nhập mail để nhận thông tin.</p>
